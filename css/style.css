@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+
+:root {
+
+    --bg-black-900: #f99b9b;
+    --bg-black-100: #bb80d9;
+    --bg-black-50: #c1ff6f;
+    --text-black-900: #506337;
+    --text-black-700: #5d2a2a;
+
+};
+
+body {
+
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+::before, ::after {
+
+    box-sizing: border-box;
+
+}
+
+.section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+
+}
+
+.aside {
+    width: 270px;
+    height: 100%;
+    background: var(--bg-black-100);
+    position: fixed;
+    padding: 30px;
+    display: flex;
+    border-right: 5px solid var(--bg-black-50);
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.aside .logo {
+
+    position: absolute;
+    top: 30px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.aside .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    background: violet;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.aside .logo a span {
+    font-family: 'Clicker Scipt', cursive;
+    font-family: 40px;
+    color: var(--text-black-700);
+}
+
+.aside .logo a:hover {
+    background: var(--bg-black-50);
+    color: var(--text-black-900);
+    transition: .3s;
+}
+
+.aside .logo a ::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skins-color);
+    border-left: 5px solid var(--skins-color);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a ::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skins-color);
+    border-left: 5px solid var(--skins-color);
+    top: 0;
+    right: 0;
+}
+
+.aside .nav {
+    margin-top: center;
+}
+
+.aside .nav li {
+    margin-bottom: 30px;
+}
+
+.aside .nav li a{
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 5px solid var(--bg-black-50);
+    display: block;
+    color: var(--bg-black-900);
+    padding: 5px 10px;
+}
+
+.aside .nav li a.active{
+    color: var(--skins-color);
+
+}
+
+.aside .nav li a i {
+    margin-right: 15px;
+}
